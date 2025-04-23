@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot Virtual Assistant</title>
+    <link rel="stylesheet" href="customerenglish.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="copbot-logo.png" alt="CopBot Logo" class="logo">
+        <h1>CopBot Virtual Assistant</h1>
+        <img src="notification-icon.png" alt="Notification" class="notification" onclick="showAlert()">
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbox-container">
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask anything...">
+            <button onclick="sendMessage()">⏺</button> 
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="left-section">
+            <div class="section" onclick="navigateTo('firenglish.html')">
+                <h2>FIR Details</h2>
+                <p>First Information Report (FIR) is the first legal step in reporting a crime.</p>
+            </div>
+
+            <div class="section" onclick="navigateTo('lawe.html')">
+                <h2>Legal Provisions & Punishments</h2>
+                <p>Indian Penal Code (IPC) outlines various punishments based on crime severity.</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section" onclick="navigateTo('baile.html')">
+                <h2>Bail Details</h2>
+                <p>Bail is a legal provision allowing the accused temporary release from custody.</p>
+            </div>
+
+            <div class="section additional-info">
+                <h2>Additional Information</h2>
+                <p>If you need more details regarding legal rights, police procedures, or case follow-ups, visit the nearest police station or consult a legal advisor.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Emergency Helpline Number: <strong>100</strong></p>
+    </div>
+
+    <script src="customerenglish.js"></script>
+</body>
+</html>

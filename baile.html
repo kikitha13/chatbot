@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Bail Application</title>
+    <link rel="stylesheet" href="baile.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Police Bail Application Form</h2>
+        <form id="bailForm">
+            <label for="applicantName">Applicant Name:</label>
+            <input type="text" id="applicantName" name="applicantName" required>
+
+            <label for="applicantPhone">Phone Number:</label>
+            <input type="tel" id="applicantPhone" name="applicantPhone" required pattern="[0-9]{10}">
+
+            <label for="applicantAddress">Address:</label>
+            <input type="text" id="applicantAddress" name="applicantAddress" required>
+
+            <label for="crimeDetails">Crime Details:</label>
+            <textarea id="crimeDetails" name="crimeDetails" required></textarea>
+
+            <label for="bailReason">Reason for Bail:</label>
+            <textarea id="bailReason" name="bailReason" required></textarea>
+
+            <label for="bailType">Bail Type:</label>
+            <select id="bailType" name="bailType" required>
+                <option value="police">Police Bail</option>
+                <option value="court">Court Bail</option>
+            </select>
+
+            <div id="policeBailDetails" class="hidden">
+                <label for="officerName">Investigating Officer Name:</label>
+                <input type="text" id="officerName" name="officerName">
+            </div>
+
+            <button type="submit">Apply for Bail</button>
+        </form>
+    </div>
+    <script src="baile.js"></script>
+</body>
+</html>

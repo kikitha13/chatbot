@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>CopBot Chatbot</h1>
+        <h2>Login</h2>
+
+        <!-- Role Selection -->
+        <label for="userType">Select User Type:</label>
+        <select id="userType">
+            <option value="police">Police</option>
+            <option value="citizen">Citizen</option>
+        </select>
+
+        <!-- Login Credentials -->
+        <input type="text" id="loginCredential" placeholder="Email ID or Phone Number" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+
+        <!-- Login Button -->
+        <button onclick="login()">Login</button>
+
+        <!-- Sign-Up Navigation -->
+        <p>New User? <a href="BOT.html">Sign Up Here</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

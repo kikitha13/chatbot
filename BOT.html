@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to CopBot</h2>
+
+        <!-- Role Selection -->
+        <div id="role-selection">
+            <p>Select your role:</p>
+            <button onclick="showSignUp('police')">Police Sign-Up</button>
+            <button onclick="showSignUp('citizen')">Citizen Sign-Up</button>
+        </div>
+
+        <!-- Police Sign-Up Form -->
+        <div id="police-signup" class="signup-form">
+            <h3>Police Sign-Up</h3>
+            <input type="text" id="policeName" placeholder="Full Name" required>
+            <input type="tel" id="policePhone" placeholder="Phone Number" required>
+            <button onclick="sendOTP('policePhone')">Send OTP</button>
+            <input type="text" id="policeOTP" placeholder="Enter OTP" required>
+            <input type="email" id="policeEmail" placeholder="Email ID" required>
+            <input type="text" id="policeAddress" placeholder="Address" required>
+            <input type="text" id="policePosition" placeholder="Position" required>
+            <input type="text" id="policeID" placeholder="Police ID" required>
+            <button onclick="submitForm('police')">Submit</button>
+        </div>
+
+        <!-- Citizen Sign-Up Form -->
+        <div id="citizen-signup" class="signup-form">
+            <h3>Citizen Sign-Up</h3>
+            <input type="text" id="userName" placeholder="Full Name" required>
+            <input type="tel" id="userPhone" placeholder="Phone Number" required>
+            <button onclick="sendOTP('userPhone')">Send OTP</button>
+            <input type="text" id="userOTP" placeholder="Enter OTP" required>
+            <input type="email" id="userEmail" placeholder="Email ID" required>
+            <input type="text" id="userAddress" placeholder="Address" required>
+            <button onclick="submitForm('citizen')">Submit</button>
+        </div>
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot மெய்நிகர் உதவியாளர்</title>
+    <link rel="stylesheet" href="customerTamil.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="copbot-logo.png" alt="CopBot லோகோ" class="logo">
+        <h1>CopBot மெய்நிகர் உதவியாளர்</h1>
+        <img src="notification-icon.png" alt="அறிவிப்பு" class="notification" onclick="showAlert()">
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbox-container">
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="எதையும் கேளுங்கள்...">
+            <button onclick="sendMessage()">⏺</button> 
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="left-section">
+            <div class="section" onclick="navigateTo('firtamil.html')">
+                <h2>எஃப்.ஐ.ஆர் விவரங்கள்</h2>
+                <p>குற்றம் புகாரளிக்கப்பட்ட முதல் சட்ட நடவடிக்கை.</p>
+            </div>
+
+            <div class="section" onclick="navigateTo('lawtamil.html')">
+                <h2>சட்ட நிர்வாகம் & தண்டனைகள்</h2>
+                <p>இந்திய குற்றவியல் சட்டம் (IPC) குற்றங்களுக்கு தண்டனைகளை வகைப்படுத்துகிறது.</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section" onclick="navigateTo('bailtamil.html')">
+                <h2>ஜாமின் விவரங்கள்</h2>
+                <p>குற்றஞ்சாட்டப்பட்டவர் தற்காலிகமாக விடுவிக்கப்படுவதற்கான சட்ட நடைமுறை.</p>
+            </div>
+
+            <div class="section additional-info">
+                <h2>கூடுதல் தகவல்</h2>
+                <p>சட்ட உரிமைகள், காவல்துறை செயல்முறைகள், வழக்குகளின் முன்னேற்றம் ஆகியவை பற்றிய கூடுதல் தகவலுக்கு, காவல்நிலையம் செல்லுங்கள் அல்லது சட்ட ஆலோசகரை அணுகவும்.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>அவசர உதவி எண்: <strong>100</strong></p>
+    </div>
+
+    <script src="customerTamil.js"></script>
+</body>
+</html>

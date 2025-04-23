@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot वर्चुअल असिस्टेंट</title>
+    <link rel="stylesheet" href="customerHindi.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="copbot-logo.png" alt="CopBot लोगो" class="logo">
+        <h1>CopBot वर्चुअल असिस्टेंट</h1>
+        <img src="notification-icon.png" alt="नोटिफिकेशन" class="notification" onclick="showAlert()">
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbox-container">
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="कुछ पूछें...">
+            <button onclick="sendMessage()">⏺</button> 
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="left-section">
+            <div class="section" onclick="navigateTo('firhindi.html')">
+                <h2>एफ.आई.आर जानकारी</h2>
+                <p>किसी अपराध के लिए पहली कानूनी प्रक्रिया।</p>
+            </div>
+
+            <div class="section" onclick="navigateTo('lawhindi.html')">
+                <h2>कानून एवं सज़ा</h2>
+                <p>भारतीय दंड संहिता (IPC) के तहत दंड।</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section" onclick="navigateTo('bailhindi.html')">
+                <h2>जमानत जानकारी</h2>
+                <p>आरोपी को अस्थायी रिहाई का तरीका।</p>
+            </div>
+
+            <div class="section additional-info">
+                <h2>अतिरिक्त जानकारी</h2>
+                <p>कानूनी अधिकार, पुलिस प्रक्रिया और केस की स्थिति की अधिक जानकारी के लिए स्थानीय पुलिस स्टेशन से संपर्क करें।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>आपातकालीन सहायता नंबर: <strong>100</strong></p>
+    </div>
+
+    <script src="customerHindi.js"></script>
+</body>
+</html>

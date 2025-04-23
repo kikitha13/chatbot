@@ -1,0 +1,92 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Centering the container */
+.container {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px red;
+    width: 350px;
+}
+
+/* Role Selection */
+#role-selection p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+#role-selection button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#role-selection button:hover {
+    background-color: darkred;
+}
+
+/* Signup Forms */
+.signup-form {
+    display: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.signup-form h3 {
+    text-align: center;
+    color: red;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.signup-form input::placeholder {
+    color: gray;
+}
+
+/* Submit Button */
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;  /* Keeps it directly under the address field */
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: darkred;
+}

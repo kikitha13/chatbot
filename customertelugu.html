@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopBot వర్చువల్ అసిస్టెంట్</title>
+    <link rel="stylesheet" href="customerTelugu.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="copbot-logo.png" alt="CopBot లోగో" class="logo">
+        <h1>CopBot వర్చువల్ అసిస్టెంట్</h1>
+        <img src="notification-icon.png" alt="నోటిఫికేషన్" class="notification" onclick="showAlert()">
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbox-container">
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="ఏదైనా అడగండి...">
+            <button onclick="sendMessage()">⏺</button> 
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="left-section">
+            <div class="section" onclick="navigateTo('firtelugu.html')">
+                <h2>ఎఫ్‌.ఐ‌.ఆర్ వివరాలు</h2>
+                <p>నేరానికి మొదటి చట్టపరమైన చర్య.</p>
+            </div>
+
+            <div class="section" onclick="navigateTo('lawtelugu.html')">
+                <h2>చట్టం & శిక్ష</h2>
+                <p>భారతీయ నేర చట్టం (IPC) ప్రకారం శిక్షలు.</p>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section" onclick="navigateTo('bailtelugu.html')">
+                <h2>జామీను వివరాలు</h2>
+                <p>నిందితుడిని తాత్కాలికంగా విడుదల చేసే విధానం.</p>
+            </div>
+
+            <div class="section additional-info">
+                <h2>అదనపు సమాచారం</h2>
+                <p>కానూను హక్కులు, పోలీస్ ప్రక్రియ, కేసు పురోగతి గురించి మరిన్ని వివరాలకు స్థానిక పోలీస్ స్టేషన్‌ను సంప్రదించండి.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>అత్యవసర సహాయ నంబర్: <strong>100</strong></p>
+    </div>
+
+    <script src="customerTelugu.js"></script>
+</body>
+</html>
